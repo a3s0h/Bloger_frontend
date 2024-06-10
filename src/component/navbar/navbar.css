@@ -1,0 +1,36 @@
+
+.toggleNavBtn , 
+.mobileNavOptions{
+    display: none;
+}
+
+@media (max-width: 768px)
+{
+    .desktopNavbar{
+        display: none;
+    }
+    .toggleNavBtn{
+        display: block;
+        margin-right: 2rem;
+    }
+    .mobileNavOptions{
+        display: block;
+    }
+    .navOptions{
+        /* display: none; */
+        position: absolute;
+        top: 0px ;
+        left: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.884);
+        height: 100vh;
+        width: 50%;
+        color: white;
+        padding: 10px;
+        font-size: 2rem;
+        z-index: 10000;
+    }
+}
